@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Volpe</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.10.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.10.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.10.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.10.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.10.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+<body>
+  <nav class="l-navbar">
+    <ul class="navbar__list">
+      <li class="navbar__item">
+        <a href="">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="">Link2</a>
+      </li>
+      <li class="navbar__item">
+        <a href="">
+          <img src="./assets/img/fox-icon.png" alt="">
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a href="">Link3</a>
+      </li>
+      <li class="navbar__item">
+        <a href="">Link4</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="l-header parallax">
+    <div class="header__title">
+      <p>LA VOLPE</p>
+    </div>
+  </header>
+
+  <section id="information" class="l-info">
+    <article class="info_area">
+      <p class="info_area__title">LA VOLPE</p>
+      <section class="info_area__article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </section>
+    </article>
+  </section>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHcfAeUbPH0k7yJQni_BiXO3GasF9aZuA",
+    authDomain: "phsantana-181c9.firebaseapp.com",
+    databaseURL: "https://phsantana-181c9.firebaseio.com",
+    projectId: "phsantana-181c9",
+    storageBucket: "phsantana-181c9.appspot.com",
+    messagingSenderId: "411895583507"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./js/parallax.js"></script>
+</body>
+</html>

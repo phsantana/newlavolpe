@@ -1,0 +1,38 @@
+.h-fullsize{
+	background-color: pink;
+}
+
+.header__title{
+	color: white;
+	font-size: 5em;
+	animation: fadeInLeft 2s ease;
+}
+
+.navbar__list{
+	display: flex;
+	align-items: center;
+	font-size: 16pt;
+}
+
+.navbar__item{
+	margin: 0 20px;
+}
+
+.navbar__item > a{
+	color: white;
+	font-family: "Brandon_light";
+}
+
+.info_area{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info_area__title{
+	font-size: 2em;
+}
+
+.info_area__article{
+	font-size: 1.1em;
+}

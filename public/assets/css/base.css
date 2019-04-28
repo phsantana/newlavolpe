@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	border: none;
+	padding: 0;
+	outline: none;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	background-color: #EEE;
+	min-height: 100%;
+	letter-spacing: 2px;
+	font-family: 'Brandon_regular';
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	transition: all ease .3s;
+}
+
+a:hover{
+	opacity: .7;
+	transition: all ease .3s;
+}

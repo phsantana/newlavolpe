@@ -1,0 +1,4 @@
+.is-scrolling{
+	transition: all ease .3s;
+	background-color: rgba(0,0,0,.5);
+}
