@@ -1,32 +1,39 @@
-*{
-	margin: 0;
-	border: none;
-	padding: 0;
-	outline: none;
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: none;
 }
 
-html,body{
-	height: 100%;
-	scroll-behavior: smooth;
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
-body{
-	background-color: #EEE;
-	min-height: 100%;
-	letter-spacing: 2px;
-	font-family: 'Brandon_regular';
+body {
+  background-color: #EEE;
+  min-height: 100%;
+  letter-spacing: 2px;
+  font-family: "Brandon_regular";
 }
 
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
 
-a{
-	text-decoration: none;
-	transition: all ease .3s;
+a {
+  text-decoration: none;
+  transition: all ease 0.3s;
 }
 
-a:hover{
-	opacity: .7;
-	transition: all ease .3s;
+a:hover {
+  opacity: 0.7;
+  transition: all ease 0.3s;
 }
+
+footer {
+  box-sizing: border-box;
+  color: white;
+}
+
+/*# sourceMappingURL=base.css.map */

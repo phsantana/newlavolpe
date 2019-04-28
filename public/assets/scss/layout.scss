@@ -21,7 +21,6 @@
 }
 
 .l-info{
-	padding: 8em;
 	box-sizing: border-box;
 	text-align: center;
 	font-family: "Brandon_light";
@@ -33,5 +32,17 @@
 }
 
 /*SIZE*/
+.l-info--large{
+	padding: size(large);
+}
+.l-info--medium{
+	padding: size(medium);
+}
+.l-info--small{
+	padding: size(small);
+}
 
 /*STYLE*/
+.l-info--dark{
+	background-color: #111;
+}

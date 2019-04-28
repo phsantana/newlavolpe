@@ -34,13 +34,8 @@
   align-items: center;
 }
 
-.info_area__title {
-  border-bottom: 1px solid;
-  margin-bottom: 1.5em;
-  font-size: 2em;
-}
-
 .info_area__article {
+  margin-top: 1.5em;
   font-size: 1.1em;
 }
 
@@ -86,6 +81,19 @@
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+/*SIZE*/
+.info_area__title--large {
+  font-size: 2em;
+}
+
+.info_area__title--medium {
+  font-size: 1.5em;
+}
+
+.info_area__title--small {
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=module.css.map */

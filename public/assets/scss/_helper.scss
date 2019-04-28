@@ -1,3 +1,13 @@
+$l_sizes: (
+	small: 3em,
+	medium: 5em,
+	large: 8em
+);
+
+@function size($size-name){
+	@return map-get($l_sizes,$size-name)
+}
+
 %flex-row{
 	display: flex;
 	flex-direction: row;
