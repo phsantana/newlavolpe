@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.h-text--white {
+  color: white;
+}
+
 /*STRUCTURE*/
 .l-header {
   min-height: 100%;
@@ -31,6 +35,8 @@
 }
 
 .l-info {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   text-align: center;
   font-family: "Brandon_light";
@@ -54,6 +60,14 @@
 }
 
 /*STYLE*/
+.l-info--center {
+  justify-content: center;
+}
+
+.l-info--space {
+  justify-content: space-around;
+}
+
 .l-info--dark {
   background-color: #111;
 }
