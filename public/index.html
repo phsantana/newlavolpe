@@ -20,10 +20,10 @@
   <nav class="l-navbar">
     <ul class="navbar__list">
       <li class="navbar__item">
-        <a href="">Home</a>
+        <a href="#home">Home</a>
       </li>
       <li class="navbar__item">
-        <a href="">Link2</a>
+        <a href="#information">Sobre</a>
       </li>
       <li class="navbar__item">
         <a href="">
@@ -39,7 +39,7 @@
     </ul>
   </nav>
 
-  <header class="l-header parallax">
+  <header id="home" class="l-header parallax">
     <div class="header__title">
       <p>LA VOLPE</p>
     </div>
@@ -59,6 +59,25 @@
     </article>
   </section>
 
+  <section id="services" class="l-medialink">
+    <div class="medialink">
+      <h2 class="medialink__title">SERVIÇOS</h2>
+      <img src="./assets/img/info-items/item1.jpg" alt="">
+    </div>
+    <div class="medialink">
+      <h2 class="medialink__title">SOBRE NÓS</h2>
+      <img src="./assets/img/info-items/item2.jpg" alt="">
+    </div>
+    <div class="medialink">
+      <h2 class="medialink__title">SEGURANÇA</h2>
+      <img src="./assets/img/info-items/item3.jpg" alt="">
+    </div>
+    <div class="medialink">
+      <h2 class="medialink__title">ECONÔMICO</h2>
+      <img src="./assets/img/info-items/item4.jpg" alt="">
+    </div>
+  </section>
+
 
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
   <script>
@@ -74,5 +93,6 @@
   firebase.initializeApp(config);
 </script>
 <script src="./js/parallax.js"></script>
+<script src="./js/lazyload.js"></script>
 </body>
 </html>

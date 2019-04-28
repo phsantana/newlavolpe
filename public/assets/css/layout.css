@@ -1,34 +1,39 @@
+.l-medialink {
+  display: flex;
+  flex-direction: row;
+}
+
 /*STRUCTURE*/
-.l-header{
-	min-height: 100%;
-	background-image: url('../img/morning.jpg');
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Brandon_thin";
+.l-header {
+  min-height: 100%;
+  background-image: url("../img/morning.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Brandon_thin";
 }
 
-.l-navbar{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	box-sizing: border-box;
+.l-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  box-sizing: border-box;
 }
 
-.l-info{
-	padding: 5em;
-	box-sizing: border-box;
-	text-align: center;
-	font-family: "Brandon_light";
+.l-info {
+  padding: 8em;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Brandon_light";
 }
 
-.info_area__title{
-	border-bottom: 1px solid;
-	margin-bottom: 1.5em;
+.l-medialink {
+  flex-wrap: wrap;
 }
 
 /*SIZE*/
-
 /*STYLE*/
+
+/*# sourceMappingURL=layout.css.map */

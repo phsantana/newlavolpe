@@ -1,0 +1,37 @@
+@import '_helper';
+@import 'mixins/_responsiveness';
+
+/*STRUCTURE*/
+.l-header{
+	min-height: 100%;
+	background-image: url('../img/morning.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Brandon_thin";
+}
+
+.l-navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	box-sizing: border-box;
+}
+
+.l-info{
+	padding: 8em;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: "Brandon_light";
+}
+
+.l-medialink{
+	@extend %flex-row;
+	flex-wrap: wrap;
+}
+
+/*SIZE*/
+
+/*STYLE*/
