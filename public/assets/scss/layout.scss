@@ -18,6 +18,16 @@
 	justify-content: center;
 	position: fixed;
 	box-sizing: border-box;
+
+	animation: fadeInDown 2s ease;
+
+	img{
+		-webkit-transition: all ease .3s;
+		   -moz-transition: all ease .3s;
+		    -ms-transition: all ease .3s;
+		     -o-transition: all ease .3s;
+		        transition: all ease .3s;
+	}
 }
 
 .l-info{

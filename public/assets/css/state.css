@@ -1,4 +1,18 @@
-.is-scrolling{
-	transition: all ease .3s;
-	background-color: rgba(0,0,0,.5);
+.l-navbar.is-scrolling {
+  transition: all ease 0.3s;
+  background-color: rgba(0, 0, 0, 0.85);
 }
+.l-navbar.is-scrolling img {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/*# sourceMappingURL=state.css.map */

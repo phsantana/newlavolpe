@@ -20,6 +20,14 @@
   justify-content: center;
   position: fixed;
   box-sizing: border-box;
+  animation: fadeInDown 2s ease;
+}
+.l-navbar img {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .l-info {

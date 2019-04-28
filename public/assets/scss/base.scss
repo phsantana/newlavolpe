@@ -17,6 +17,15 @@ body{
 	font-family: 'Brandon_regular';
 }
 
+nav{
+	z-index: 999;
+	-webkit-transition: all ease .3s;
+	   -moz-transition: all ease .3s;
+	    -ms-transition: all ease .3s;
+	     -o-transition: all ease .3s;
+	        transition: all ease .3s;
+}
+
 ul{
 	list-style: none;
 }
