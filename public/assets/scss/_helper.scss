@@ -5,10 +5,14 @@ $l_sizes: (
 );
 
 @function size($size-name){
-	@return map-get($l_sizes,$size-name)
+	@return map-get($l_sizes,$size-name);
 }
 
 %flex-row{
 	display: flex;
 	flex-direction: row;
+}
+
+.h-text--white{
+	color: white;
 }

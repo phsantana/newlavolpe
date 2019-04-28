@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.h-text--white {
+  color: white;
+}
+
 .h-fullsize {
   background-color: pink;
 }
