@@ -32,7 +32,7 @@
     animation: fadeInDown 2s ease;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .l-navbar {
     width: 20%;
     justify-content: flex-start;
@@ -51,7 +51,7 @@
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .l-sidebar {
     z-index: 2;
     position: fixed;
@@ -72,7 +72,7 @@
   text-align: center;
   font-family: "Brandon_light";
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .l-info {
     flex-direction: column;
   }
@@ -88,7 +88,7 @@
     padding: 8em;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .l-info--large {
     padding: 8vw;
   }
