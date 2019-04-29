@@ -64,6 +64,10 @@
 	box-sizing: border-box;
 	text-align: center;
 	font-family: "Brandon_light";
+
+	@include smartphone{
+		flex-direction: column;
+	}
 }
 
 .l-medialink{
@@ -73,7 +77,13 @@
 
 /*SIZE*/
 .l-info--large{
-	padding: size(large);
+	@include desktop{
+		padding: size(large);
+	}
+
+	@include smartphone{
+		padding: 8vw;
+	}
 }
 .l-info--medium{
 	padding: size(medium);

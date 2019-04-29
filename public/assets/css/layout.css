@@ -72,14 +72,26 @@
   text-align: center;
   font-family: "Brandon_light";
 }
+@media (max-width: 480px) {
+  .l-info {
+    flex-direction: column;
+  }
+}
 
 .l-medialink {
   flex-wrap: wrap;
 }
 
 /*SIZE*/
-.l-info--large {
-  padding: 8em;
+@media (min-width: 769px) {
+  .l-info--large {
+    padding: 8em;
+  }
+}
+@media (max-width: 480px) {
+  .l-info--large {
+    padding: 8vw;
+  }
 }
 
 .l-info--medium {

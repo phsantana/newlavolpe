@@ -118,11 +118,20 @@
 .info_area__article{
 	margin-top: 1.5em;
 	font-size: 1.1em;
+	text-align: justify;
 }
 
 .medialink{
-	width: 50%;
-	height: 300px;
+	@include desktop{
+		width: 50%;
+		height: 300px;
+	}
+
+	@include smartphone{
+		width: 100%;
+		height: 30vmax;
+	}
+
 
 	overflow: hidden;
 	position: relative;
@@ -172,7 +181,14 @@
 }
 
 .card{
-	width: 25%;
+	@include desktop{
+		width: 25%;
+	}
+
+	@include smartphone{
+		width: 100%;
+	}
+
 	display: flex;
 	flex-flow: column nowrap;
 	box-sizing: border-box;
