@@ -63,6 +63,51 @@
   }
 }
 
+/*SIDEBAR*/
+@media (max-width: 480px) {
+  .sidebar__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 16pt;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 769px) {
+  .sidebar__list {
+    display: none;
+  }
+}
+
+.sidebar__header {
+  width: 100%;
+  padding: 0.8em;
+  box-sizing: border-box;
+}
+
+.sidebar__title {
+  font-size: 1.5em;
+  color: white;
+  text-align: right;
+}
+
+.sidebar__item {
+  width: 100%;
+  padding: 0.5em 0.8em;
+  transition: all ease 0.3s;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  text-transform: uppercase;
+}
+.sidebar__item > a {
+  color: white;
+  font-family: "Brandon_light";
+}
+
+/*INFO AREA*/
 .info_area {
   display: flex;
   flex-direction: column;
