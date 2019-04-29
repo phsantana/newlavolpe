@@ -52,7 +52,7 @@
 
 .navbar__menu--mobile{
 	@include desktop{
-		display: none;
+		display: none !important;
 	}
 
 	@include smartphone{
