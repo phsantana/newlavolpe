@@ -1,17 +1,27 @@
+@import 'mixins/_responsiveness';
+@import '_helper';
+
 .l-navbar.is-scrolling{
 	transition: all ease .3s;
-	background-color: rgba(0,0,0,.85);
+
+	@include desktop{
+		background-color: rgba(0,0,0,.85);
+	}
 
 	& img{
 		-webkit-transition: all ease .3s;
-		   -moz-transition: all ease .3s;
-		    -ms-transition: all ease .3s;
-		     -o-transition: all ease .3s;
-		        transition: all ease .3s;
+		-moz-transition: all ease .3s;
+		-ms-transition: all ease .3s;
+		-o-transition: all ease .3s;
+		transition: all ease .3s;
 		-webkit-transform: scale(.8);
-		   -moz-transform: scale(.8);
-		    -ms-transform: scale(.8);
-		     -o-transform: scale(.8);
-		        transform: scale(.8);
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		-o-transform: scale(.8);
+		transform: scale(.8);
 	}
+}
+
+.l-sidebar.is-active{
+	transform: translateX(0) !important;
 }

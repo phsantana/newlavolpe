@@ -8,14 +8,34 @@
 
 .header__title{
 	color: white;
-	font-size: 5em;
+	text-align: center;
 	animation: fadeInLeft 2s ease;
+
+	@include desktop{
+		& > p{
+			font-size: 5em;
+		}
+	}
+
+	@include smartphone{
+		& > p{
+			font-size: 15vw;
+		}
+	}
 }
 
+/*NAVBAR*/
 .navbar__list{
-	@extend %flex-row;
-	align-items: center;
-	font-size: 16pt;
+	@include desktop{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-size: 16pt;
+	}
+
+	@include smartphone{
+		display: none;
+	}
 }
 
 .navbar__item{
@@ -30,6 +50,19 @@
 	}
 }
 
+.navbar__menu--mobile{
+	@include desktop{
+		display: none;
+	}
+
+	@include smartphone{
+		color: white;
+		display: block;
+		cursor: pointer;
+		padding: 1em;
+		font-size: 6vw;
+	}
+}
 .info_area{
 	display: flex;
 	flex-direction: column;
@@ -61,34 +94,34 @@
 		z-index: 1;
 
 		-webkit-transform: translate(-50%,-50%);
-		   -moz-transform: translate(-50%,-50%);
-		    -ms-transform: translate(-50%,-50%);
-		     -o-transform: translate(-50%,-50%);
-		        transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
 	}
 
 	& > img{
 		width: 100%;
 		opacity: .5;
 		-webkit-transition: all ease 1s;
-		   -moz-transition: all ease 1s;
-		    -ms-transition: all ease 1s;
-		     -o-transition: all ease 1s;
-		        transition: all ease 1s;
+		-moz-transition: all ease 1s;
+		-ms-transition: all ease 1s;
+		-o-transition: all ease 1s;
+		transition: all ease 1s;
 	}
 
 	&:hover > img{
 		opacity: .1;
 		-webkit-transition: all ease 5s;
-		   -moz-transition: all ease 5s;
-		    -ms-transition: all ease 5s;
-		     -o-transition: all ease 5s;
-		        transition: all ease 5s;
+		-moz-transition: all ease 5s;
+		-ms-transition: all ease 5s;
+		-o-transition: all ease 5s;
+		transition: all ease 5s;
 		-webkit-transform: scale(1.2);
-		   -moz-transform: scale(1.2);
-		    -ms-transform: scale(1.2);
-		     -o-transform: scale(1.2);
-		        transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		transform: scale(1.2);
 	}
 }
 

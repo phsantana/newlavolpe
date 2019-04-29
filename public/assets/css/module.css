@@ -1,8 +1,3 @@
-.navbar__list {
-  display: flex;
-  flex-direction: row;
-}
-
 .h-text--white {
   color: white;
 }
@@ -14,13 +9,33 @@
 
 .header__title {
   color: white;
-  font-size: 5em;
+  text-align: center;
   animation: fadeInLeft 2s ease;
 }
+@media (min-width: 769px) {
+  .header__title > p {
+    font-size: 5em;
+  }
+}
+@media (max-width: 480px) {
+  .header__title > p {
+    font-size: 15vw;
+  }
+}
 
-.navbar__list {
-  align-items: center;
-  font-size: 16pt;
+/*NAVBAR*/
+@media (min-width: 769px) {
+  .navbar__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16pt;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__list {
+    display: none;
+  }
 }
 
 .navbar__item {
@@ -31,6 +46,21 @@
 .navbar__item > a {
   color: white;
   font-family: "Brandon_light";
+}
+
+@media (min-width: 769px) {
+  .navbar__menu--mobile {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__menu--mobile {
+    color: white;
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+    font-size: 6vw;
+  }
 }
 
 .info_area {

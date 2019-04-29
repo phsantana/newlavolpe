@@ -1,6 +1,14 @@
+.h-text--white {
+  color: white;
+}
+
 .l-navbar.is-scrolling {
   transition: all ease 0.3s;
-  background-color: rgba(0, 0, 0, 0.85);
+}
+@media (min-width: 769px) {
+  .l-navbar.is-scrolling {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 .l-navbar.is-scrolling img {
   -webkit-transition: all ease 0.3s;
@@ -13,6 +21,10 @@
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
   transform: scale(0.8);
+}
+
+.l-sidebar.is-active {
+  transform: translateX(0) !important;
 }
 
 /*# sourceMappingURL=state.css.map */

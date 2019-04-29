@@ -10,7 +10,9 @@
 /*STRUCTURE*/
 .l-header {
   min-height: 100%;
-  background-image: url("../img/morning.jpg");
+  background-image: url("../img/mono_fox.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +20,22 @@
 }
 
 .l-navbar {
-  width: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
   box-sizing: border-box;
-  animation: fadeInDown 2s ease;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .l-navbar {
+    justify-content: center;
+    animation: fadeInDown 2s ease;
+  }
+}
+@media (max-width: 480px) {
+  .l-navbar {
+    justify-content: flex-start;
+  }
 }
 .l-navbar img {
   -webkit-transition: all ease 0.3s;
@@ -32,6 +43,22 @@
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
+}
+
+@media (min-width: 769px) {
+  .l-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .l-sidebar {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    transition: all ease 0.3s;
+    transform: translateX(-100%);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 
 .l-info {

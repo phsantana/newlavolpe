@@ -4,7 +4,9 @@
 /*STRUCTURE*/
 .l-header{
 	min-height: 100%;
-	background-image: url('../img/morning.jpg');
+	background-image: url('../img/mono_fox.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,21 +14,43 @@
 }
 
 .l-navbar{
-	width: 100%;
+	position: fixed;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	position: fixed;
 	box-sizing: border-box;
+	width: 100%;
 
-	animation: fadeInDown 2s ease;
+	@include desktop{
+		justify-content: center;
+		animation: fadeInDown 2s ease;
+	}
+
+	@include smartphone{
+		justify-content: flex-start;
+	}
 
 	img{
 		-webkit-transition: all ease .3s;
-		   -moz-transition: all ease .3s;
-		    -ms-transition: all ease .3s;
-		     -o-transition: all ease .3s;
-		        transition: all ease .3s;
+		-moz-transition: all ease .3s;
+		-ms-transition: all ease .3s;
+		-o-transition: all ease .3s;
+		transition: all ease .3s;
+	}
+}
+
+.l-sidebar{
+	@include desktop{
+		display: none;
+	}
+
+	@include smartphone{
+		position: fixed;
+		width: 70%;
+		height: 100%;
+		transition: all ease .3s;
+		transform: translateX(-100%);
+
+		background-color: rgba(0,0,0,0.9);
 	}
 }
 
